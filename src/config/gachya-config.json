@@ -1,13 +1,120 @@
 {
-    "godenProbability":0.006,
-    "purpleProbability":0.1,
-    "blueProbability":0.894,
-    "upProbability":0.75,
-    "godenLast":80,
-    "purpleLast":10,
-    "godenList":["浪漫华彩", "炼狱", "破浪鸭"],
-    "purpleList":["纸牌屋", "占星", "主角之星", "Q版世界"],
-    "blueList":["b1", "b2", "b3", "b4", "b5"],
-    "godenUp":["浪漫华彩","破浪鸭"],
-    "purpleUp":["Q版世界","纸牌屋"]
+  "godenProbability": 0.006,
+  "purpleProbability": 0.1,
+  "blueProbability": 0.894,
+  "upProbability": 0.5,
+  "godenLast": 80,
+  "purpleLast": 10,
+  "godenUnupMax":1,
+  "purpleUnupMax":1,
+  "godenList": [
+    {
+      "type": 0,
+      "name": "北极星-绯红疗愈",
+      "img": "https://patchwiki.biligame.com/images/klbq/a/a5/fvdwpikd2rr7jscyqzx0ziiu7c033k8.png"
+    },
+    {
+      "type": 0,
+      "name": "幻霜-夏日奏鸣",
+      "img": "https://patchwiki.biligame.com/images/klbq/5/5f/sjswtvy09xw1pgsys3tk600p38q3ons.png"
+    },
+    {
+      "type": 0,
+      "name": "空境-破浪鸭",
+      "img": "https://patchwiki.biligame.com/images/klbq/7/7d/ajh3n876md771a88p3yl9ii7vrx78nh.png"
+    },
+    {
+      "type": 0,
+      "name": "警探-炼狱",
+      "img": "https://patchwiki.biligame.com/images/klbq/5/58/o6tzeip0im4wuks4zynvy5tu6k14aym.png"
+    },
+    {
+      "type": 0,
+      "name": "谢幕曲-闪耀荧光",
+      "img": "https://patchwiki.biligame.com/images/klbq/f/fd/8hosjke1u0s44r3d73u0brobw4n5m8n.png"
+    }
+  ],
+  "purpleList": [
+    {
+      "type": 1,
+      "name": "警探-夏日派对",
+      "img": "https://patchwiki.biligame.com/images/klbq/9/94/5z7dgx2bc12p2kez1s40vcxvcfanvcm.png"
+    },
+    {
+      "type": 1,
+      "name": "逆焰-夏日海滩",
+      "img": "https://patchwiki.biligame.com/images/klbq/1/13/3zjqxvk94xz5v4imsvm16buaa3givt4.png"
+    },
+    {
+      "type": 1,
+      "name": "破晓-浪人",
+      "img": "https://patchwiki.biligame.com/images/klbq/0/07/px8oy8d7ukll91o24ntk6qco82q784j.png"
+    },
+    {
+      "type": 1,
+      "name": "影袭-Q版世界",
+      "img": "https://patchwiki.biligame.com/images/klbq/9/9c/t4ll5vtkmgfp8rycv6sqttyulrb49bn.png"
+    },
+    {
+      "type": 1,
+      "name": "审判官-招财猫",
+      "img": "https://patchwiki.biligame.com/images/klbq/b/bd/nac14kqr86e8symedvq1omm6e5j9a2j.png"
+    },
+    {
+      "type": 1,
+      "name": "彩绘-纸牌屋",
+      "img": "https://patchwiki.biligame.com/images/klbq/d/db/p6ntf2xbg2xb71bvllgt4edjeqqdifv.png"
+    }
+  ],
+  "blueList": [
+    {
+      "type": 2,
+      "name": "警探-彩斑",
+      "img": "https://patchwiki.biligame.com/images/klbq/8/8b/qgd7u86froo95dx8qcqfdxmylxxzmg6.png"
+    },
+    {
+      "type": 2,
+      "name": "逆焰-紫金",
+      "img": "https://patchwiki.biligame.com/images/klbq/a/a5/848ttrunox9bfga4zgy25u8vahv0g4t.png"
+    },
+    {
+      "type": 2,
+      "name": "隼-霓虹",
+      "img": "https://patchwiki.biligame.com/images/klbq/0/0f/7ga3l7y4smvyio7asq5z43a7jp2417z.png"
+    },
+    {
+      "type": 2,
+      "name": "谢幕曲-浪潮",
+      "img": "https://patchwiki.biligame.com/images/klbq/e/ea/iyiz6jiaoi2er3awrmfacttujwjgf1b.png"
+    },
+    {
+      "type": 2,
+      "name": "影袭-信念",
+      "img": "https://patchwiki.biligame.com/images/klbq/5/5c/feu9cc1n6pbm8wc06dob97dxjrbqwzi.png"
+    }
+  ],
+  "godenUp": [
+    {
+      "type": 0,
+      "name": "谢幕曲-闪耀荧光",
+      "img": "https://patchwiki.biligame.com/images/klbq/f/fd/8hosjke1u0s44r3d73u0brobw4n5m8n.png"
+    },
+    {
+      "type": 0,
+      "name": "空境-破浪鸭",
+      "img": "https://patchwiki.biligame.com/images/klbq/7/7d/ajh3n876md771a88p3yl9ii7vrx78nh.png"
+    }
+  ],
+  "purpleUp": [
+    {
+      "type": 1,
+      "name": "审判官-招财猫",
+      "img": "https://patchwiki.biligame.com/images/klbq/b/bd/nac14kqr86e8symedvq1omm6e5j9a2j.png"
+    },
+    {
+      "type": 1,
+      "name": "彩绘-纸牌屋",
+      "img": "https://patchwiki.biligame.com/images/klbq/d/db/p6ntf2xbg2xb71bvllgt4edjeqqdifv.png"
+    }
+  ]
 }

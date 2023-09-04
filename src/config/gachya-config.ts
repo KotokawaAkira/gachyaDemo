@@ -1,14 +1,17 @@
+import {Item} from "../type/item.ts";
 type GachyaConfiguration = {
-    godenProbability:number,
-    purpleProbability:number,
-    blueProbability:number,
-    upProbability:number,
-    godenLast:number,
-    purpleLast:number,
-    godenList:string[]
-    purpleList:string[]
-    blueList:string[]
-    godenUp:string[]
-    purpleUp:string[]
+    godenProbability:number//金色概率
+    purpleProbability:number
+    blueProbability:number
+    upProbability:number
+    godenLast:number// 金色保底次数
+    purpleLast:number
+    godenUnupMax:number// 获得金色非保底最大次数(例:1为两次必定获得up)
+    purpleUnupMax:number;
+    godenList:Item[]
+    purpleList:Item[]
+    blueList:Item[]
+    godenUp:Item[]
+    purpleUp:Item[]
 }
 export type {GachyaConfiguration}
