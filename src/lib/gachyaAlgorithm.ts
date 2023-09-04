@@ -1,18 +1,21 @@
 import { GachyaConfiguration } from "../config/gachya-config.ts";
 import GachyaConfig from "../config/gachya-config.json";
 const gachyaConfig: GachyaConfiguration = GachyaConfig;
+// 初始化全局非up金池子
 const godenUnupList = initUnupList(
   gachyaConfig.godenUp,
   gachyaConfig.godenList
 );
+// 初始化全局非up紫池子
 const purpleUnupList = initUnupList(
   gachyaConfig.purpleUp,
   gachyaConfig.purpleList
 );
 /**
+ * 抽取物品
  * @param godenCount 金色已抽取数量
  * @param purpleCount 紫色已抽取数量
- * @returns
+ * @returns 0:金 1:紫 2:蓝
  */
 function gachya(godenCount: number = 0, purpleCount: number = 0) {
   const gachyaNum = Math.random() * 100;
@@ -26,14 +29,14 @@ function gachya(godenCount: number = 0, purpleCount: number = 0) {
   
 }
 /**
- * 从列表中抽取物品
+ * 传入gachya方法抽出的类型，从列表中抽取物品
  * @param type 0:金 1:紫 2:蓝
  * @returns 抽取到的物品
  */
 function randomGetFromList(type: 0 | 1 | 2) {
-  let list: string[]; // 总池子
+  let list: string[]; // 初始化总池子
   let upList: string[]; // 初始化up池子
-  let unupList: string[];
+  let unupList: string[];// 初始化非up池子
   switch (type) {
     case 0:
       unupList = godenUnupList; // 非up金池子
@@ -52,12 +55,13 @@ function randomGetFromList(type: 0 | 1 | 2) {
 
   const randomNum = Math.random() * 100; // 随机一个数
   if (randomNum < gachyaConfig.upProbability * 100) {
-    // 随机数处于up概率之中
+    // 随机数处于up区间
     const index = Math.floor(Math.random() * upList.length); // 随机输出up项目
     return upList[index];
   } else {
-    const index = Math.floor(Math.random() * unupList.length);
-    return unupList[index]; // 随机抽取一个非up项目
+    // 非up区间
+    const index = Math.floor(Math.random() * unupList.length);// 随机抽取一个非up项目
+    return unupList[index]; 
   }
 }
 /**
