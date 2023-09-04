@@ -2,11 +2,12 @@
     "godenProbability":0.006,
     "purpleProbability":0.1,
     "blueProbability":0.894,
+    "upProbability":0.75,
     "godenLast":80,
     "purpleLast":10,
     "godenList":["浪漫华彩", "炼狱", "破浪鸭"],
     "purpleList":["纸牌屋", "占星", "主角之星", "Q版世界"],
     "blueList":["b1", "b2", "b3", "b4", "b5"],
-    "godenUp":["浪漫华彩"],
+    "godenUp":["浪漫华彩","破浪鸭"],
     "purpleUp":["Q版世界","纸牌屋"]
 }

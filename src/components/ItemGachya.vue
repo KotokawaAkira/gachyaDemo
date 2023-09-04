@@ -11,38 +11,32 @@
 </template>
 <script setup lang="ts">
 import { reactive, ref } from "vue";
-import gachya from "../lib/gachyaAlgorithm";
+import {gachya,randomGetFromList} from "../lib/gachyaAlgorithm";
 const resultList = ref<string[]>([]);
-const blueList = ref(['b1', 'b2', 'b3', 'b4', 'b5']);
-const purpleList = ref(['纸牌屋', '占星', '主角之星', 'Q版世界']);
-const godenList = ref();
 const counter = reactive({
     godenCount: 0,
     purpleCount: 0
 })
-function randomGetOneFromList(list: string[]) {
-    const index = Math.floor(Math.random() * list.length);
-    return list[index];
-}
+
 function gachyaOne() {
     const resultNum = gachya(counter.godenCount, counter.purpleCount);
     switch (resultNum) {
         case 0:
             counter.purpleCount++;
             counter.godenCount = 0;
-            const godenResult = randomGetOneFromList(godenList.value);
+            const godenResult = randomGetFromList(0);
             resultList.value.push(godenResult);
             break;
         case 1:
             counter.godenCount++;
             counter.purpleCount = 0;
-            const purpleResult = randomGetOneFromList(purpleList.value);
+            const purpleResult = randomGetFromList(1);
             resultList.value.push(purpleResult);
             break;
         case 2:
             counter.godenCount++;
             counter.purpleCount++;
-            const blueResult = randomGetOneFromList(blueList.value);
+            const blueResult = randomGetFromList(2);
             resultList.value.push(blueResult);
             break;
     }
