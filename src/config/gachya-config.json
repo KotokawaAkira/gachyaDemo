@@ -1,12 +1,11 @@
 {
   "godenProbability": 0.006,
   "purpleProbability": 0.1,
-  "blueProbability": 0.894,
-  "upProbability": 0.5,
+  "upProbability": 0.75,
   "godenLast": 80,
   "purpleLast": 10,
-  "godenUnupMax":1,
-  "purpleUnupMax":1,
+  "godenUnupMax": 1,
+  "purpleUnupMax": 1,
   "godenList": [
     {
       "type": 0,

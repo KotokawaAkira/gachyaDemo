@@ -2,7 +2,6 @@ import {Item} from "../type/item.ts";
 type GachyaConfiguration = {
     godenProbability:number//金色概率
     purpleProbability:number
-    blueProbability:number
     upProbability:number
     godenLast:number// 金色保底次数
     purpleLast:number

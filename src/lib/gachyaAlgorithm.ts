@@ -98,7 +98,7 @@ function resultMapping(num: number) {
  */
 function initUnupList(upList: Item[], list: Item[]) {
   let unupList: Item[] = []; // 初始化非up池子
-  unupList = list.filter((el) => !upList.some((item) => el.name === item.name));
+  unupList = list.filter((el) => !upList.some((item) => el.name === item.name)); // 从总池子中抽出up池中的物品
   return unupList;
 }
 export { gachya, randomGetFromList };
