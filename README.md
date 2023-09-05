@@ -1,3 +1,5 @@
+使用Vite+Vue构建
+
 # 1.配置文件
 
 配置文件路径：**src/config/gachya-config.json**

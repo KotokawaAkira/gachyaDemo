@@ -1,7 +1,7 @@
 {
   "godenProbability": 0.006,
   "purpleProbability": 0.1,
-  "upProbability": 0.75,
+  "upProbability": 0.5,
   "godenLast": 80,
   "purpleLast": 10,
   "godenUnupMax": 1,
