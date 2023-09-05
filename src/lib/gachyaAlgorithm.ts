@@ -35,7 +35,6 @@ function gachya(godenCount: number = 0, purpleCount: number = 0) {
  * @returns 抽取到的物品
  */
 function randomGetFromList(type: 0 | 1 | 2, unUpCount?: number) {
-  let list: Item[]; // 初始化总池子
   let upList: Item[]; // 初始化up池子
   let unupList: Item[]; // 初始化非up池子
   let unUpMax: number;
@@ -43,13 +42,11 @@ function randomGetFromList(type: 0 | 1 | 2, unUpCount?: number) {
     case 0:
       unupList = godenUnupList; // 非up金池子
       upList = gachyaConfig.godenUp; // 金up池子
-      list = gachyaConfig.godenList; // 金池子
       unUpMax = gachyaConfig.godenUnupMax; // 金色最大非up次数
       break;
     case 1:
       unupList = purpleUnupList; // 非up紫池子
       upList = gachyaConfig.purpleUp; // 紫up池子
-      list = gachyaConfig.purpleList; // 紫池子
       unUpMax = gachyaConfig.purpleUnupMax; // 紫色最大非up次数
       break;
     case 2:
