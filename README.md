@@ -1,4 +1,4 @@
-使用Vite+Vue构建
+使用Vite+Vue+TypeScript构建
 
 # 1.配置文件
 
@@ -54,17 +54,17 @@ JSON配置案例
   "blueList":[{
       "type": 2,
       "name": "警探-彩斑",
-      "img": "/imgs/weapons/警探-彩斑.png.png"
+      "img": "/imgs/weapons/警探-彩斑.png"
     }],
   "godenUp":[{
       "type": 0,
       "name": "北极星-绯红疗愈",
-      "img": "/imgs/weapons/北极星-绯红疗愈.png.png"
+      "img": "/imgs/weapons/北极星-绯红疗愈.png"
     }],
   "purpleUp":[{
       "type": 1,
       "name": "警探-夏日派对",
-      "img": "/imgs/weapons/警探-夏日派对.png.png"
+      "img": "/imgs/weapons/警探-夏日派对.png"
     }]
 }
 ```
